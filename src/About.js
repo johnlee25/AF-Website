@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './About.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import about1 from './images/about1.jpg';
-import about2 from './images/about2.jpg';
-import about3 from './images/about3.jpg';
-import about4 from './images/about4.png';
 import { GrFacebookOption, GrSpotify } from 'react-icons/gr';
 import { SiTiktok, SiInstagram } from 'react-icons/si';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import about1 from './images/about1.jpg';
+import about2 from './images/about2.jpg';
+import about3 from './images/about3.jpg';
+import about4 from './images/about4.png';
+
 
 
 
