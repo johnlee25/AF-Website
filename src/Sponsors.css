@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+.sponsors-body {
+    background-color: #151515;
+    color: white;
+}
+
+.sponsor-content {
+    padding: 112px 155px 30px 155px;
+}
+
+.sponsor-content-title {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.sponsor-content-links {
+    margin: 110px 0px 0px 0px;
+}
+
+.sponsor-content-links-img {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 150px;
+}
+
+.sponsor-img {
+    width: 227px;
+    height: 216px;
+}
+
+.sponsor-content-links-name {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 35px 0px 0px 0px;
+}
+
+.sponsor-link{
+    color: white;
+}
+
+@media screen and (min-height: 1080px) {
+    .sponsor-body {
+        background-color: #151515;
+        height: 95vh;
+        color: white;
+    }
+}

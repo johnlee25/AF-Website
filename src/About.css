@@ -1,14 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 .about-body {
     background-color: #151515;
     height: 720px;
     color: white;
 }
 
-
 .about-content {
     width: 778px;
-    padding-top: 125px;
-    margin: 0px 0px 0px 204px;
+    margin: 125px 0px 0px 204px;
     display: inline-block;
     vertical-align: top;
 }
