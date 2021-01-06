@@ -1,185 +1,232 @@
-.home-banner {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color: white;
-    background-color: #FFDE72;
-    background-image: linear-gradient(#FFDE72, #FFB479);
-    width: 100%;
-    height: 720px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-.logo {
-    position: relative;
-    font-size: 24px;
-    margin-left: 4%;
-    top: 51px;
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
 }
 
-.title {
-    text-align: center;
-    padding: 0px;
-    margin-top: 200px;
+.new-home {
+    background-color: #151515;
 }
 
-.titles {
-    font-size: 14px;
-    margin-bottom: 15px;
+.new-home-banner {
+    width: 1920px;
+    height: 624.5px;
 }
 
-.titlel {
-    font-size: 112px;
-    line-height: 108px;
-    color: white;
-}
-
-.home-body {
-    background-color: #FFF8E9;
-    width: 100%;
-    height: 720px;
-}
-
-.img-text {
-    width: 52%;
-    height: 406px;
-    background-color: white;
+.new-home-banner-logo {
     position: absolute;
-    left: 15%;
-    margin-top: 232px;
-    border-radius: 5%;
+    left: 50px;
+    top: 50px;
+    color: white;
 }
 
-.img-title {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 67px;
-    background: -webkit-linear-gradient(#FFDE72, #FFB479);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 70px;
-    margin-top: 77px;
-    line-height: 87px;
+.AF-logo {
+    height: 100px;
+    width: 120px;
 }
 
-.img-titles {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13.5px;
-    background: -webkit-linear-gradient(#FFDE72, #FFB479);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 70px;
+.new-home-blurb {
+    position: absolute;
+    width: 1711px;
+    height: 206px;
+    left: 204px;
+    top: 220px;
+    color: white;
 }
 
-.img-content {
-    font-family: proxima-nova, sans-serif;
+.new-home-blurb-title {
+    font-family: 'Raleway';
     font-style: normal;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 117px;
+}
+
+.new-home-blurb-content {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    width: 927px;
+    height: 173px;
+    padding-top: 40px;
+}
+
+.new-home-contact-btn {
+    position: absolute;
+    left: 204px;
+    top: 503px;
+    width: 250px;
+    height: 60px;
+}
+
+.new-home-contact-btn-click {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    border: 3px solid #F1C232;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #151515;
+    color: white;
+    height: 55px;
+    width: 100%;
+}
+
+.hr-line {
+    width: 93%;
+    background-Color: #9b9696;
+    height: .5;
+}
+
+.new-home-sponsors {
+    height: 603.5px;
+    color: white;
+}
+
+.new-home-sponsors-title {
+    margin: 116px 0px 0px 165px;
+    width: 410px;
+    height: 59px;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.new-home-sponsors-content {
+    margin: 100px 0px 0px 165px;
+}
+
+.new-home-sponsors-content-items {
+
+}
+
+.new-sponsor-img {
+    width: 83px;
+    height: 83px;
+}
+
+#contact-us {
+    height: 538.5px;
+    color: white;
+}
+
+.new-home-contact-title {
+    font-family: Raleway;
     font-weight: 400;
-    font-size: 12px;
-    margin-left: 70px;
-    line-height: 20px;
-    max-width: 390px;
-    color: #727272;
-    margin-top: 10px;
+    font-size: 40px;
+    margin: 116px 0px 0px 599px;
+
 }
 
-.img-img {
-    width: 563px;
-    height: 461px;
-    border-radius: 5%;
-    margin-top: 75px;
-    position: absolute;
-    left: 48%;
-    z-index: 1;
+.new-home-contact-content {
+    margin: 0px 0px 0px 599px;
+    width: 728px;
 }
 
-.home-sponsors {
+input[type=text]{
     width: 100%;
-    height: 720px;
-}
-
-.sponsor-title {
-    text-align: center;
-    position: relative;
-    top:100px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color: white;
-    font-size: 88px;
-    background: -webkit-linear-gradient(83deg, #FFDE72, #FFB479);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.sponsor-center {
-    text-align: center;
-}
-
-.sponsor-logooo {
+    padding: 10px 0px 20px 0px;
+    margin: 0px 0;
     display: inline-block;
-    margin-top: 100px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    color: #727272 ;
-}
-
-.sponsor-name{
-    
-}
-
-.img-sponsor {
-    margin: 0px 50px;
-    text-align: center;
-}
-
-.sponsor-button {
-    text-align: center;
-    margin-top: 130px;
-}
-
-.sponsor-click {
-    padding: 0px;
-    border-radius: 100px;
-    border: none;
-    width: 198px;
-    height: 54px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #151515;
     color: white;
-    background: -webkit-linear-gradient(180deg, #FFDE72, #FFB479);
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid  rgb(145, 143, 143);
+}
+
+input[type=text]:focus{
+    border-bottom: 1px solid  white;
 
 }
 
-.home-footer {
-    background-color: #FFDE72;
-    background-image: linear-gradient(#FFDE72, #FFB479);
+
+textarea{
     width: 100%;
-    height: 272px;
-}
-
-.footer-email{
-    position: relative;
-    top:120px;
-    text-align: center;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    padding: 10px 0px 20px 0px;
+    margin: 0px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #151515;
     color: white;
-    font-size: 13px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid  rgb(145, 143, 143);
 }
 
-.footer-logos{
-
+textarea:focus{
+    border-bottom: 1px solid  white;
 }
-.footer-icon{
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:rgb(145, 143, 143);
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:  rgb(145, 143, 143);
+    font-size: 14px;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:  rgb(145, 143, 143);
+    font-size: 14px;
+}
+
+.new-home-contact-content-submit{
+    width: 150px;
+    margin-top:20px;
+}
+
+.new-home-contact-content-submit-btn {    
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
+    border: 3px solid #F1C232;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #151515;
+    color: white;
+    height: 55px;
+    width: 100%;
+}
+
+.new-home-footer {
+    height: 160px;
+    background-color: #F1C232;
+}
+
+.new-home-footer-email {
+    color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.new-home-footer-icons {
+    color: white;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.new-home-footer-icons-social {
     width: 20px;
     height: 20px;
-    margin: 10px 5px;
+    margin: 0px 8px;
+}
+
+.footer-container {
+    padding-top: 56px;
 }

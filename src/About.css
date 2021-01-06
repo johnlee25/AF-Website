@@ -1,0 +1,57 @@
+.about-body {
+    background-color: #151515;
+    height: 720px;
+    color: white;
+}
+
+
+.about-content {
+    width: 778px;
+    padding-top: 125px;
+    margin: 0px 0px 0px 204px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-title {
+    font-family: Raleway;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 117px;
+}
+
+.about-text {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.about-pictures {
+    display: inline-block;
+    width: 700px;
+    height: 419px;
+    margin: 125px 0px 0px 125px;
+}
+
+.sliderimg {
+    width: 700px;
+    height: 419px;
+}
+
+.alice-carousel__dots-item {
+    background-color: white !important;
+}
+
+.alice-carousel__dots-item.__active{
+    background-color:  #F1C232 !important;
+}
+
+@media screen and (min-height: 1080px) {
+    .about-body {
+        background-color: #151515;
+        height: 95vh;
+        color: white;
+    }
+}

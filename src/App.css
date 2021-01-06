@@ -1,1 +1,57 @@
+.nav-bar-logo {
+    width: 100%;
+    background-color: #151515;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 28.18px;
+    padding: 65px 0px 0px 65px;
+}
 
+.nav-bar-content {
+    display: inline-block;
+    padding: 0px 61px 0px 0px;
+    font-size: 16px;
+    line-height: 18.78px;
+    float: right;
+}
+
+.nav-bar-link-content > a {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 300;
+    padding: 0px 20px;
+}
+
+.nav-bar-link-logo {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+.nav-bar-social {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.nav-bar-icons{
+    margin-left: 20px;
+}
+
+.active  {
+    font-family: 'Raleway';
+    font-weight: 300;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #F1C232 !important;
+}
+
+.nav-bar-link-content a:hover {
+    color: #F1C232;
+    text-decoration: none;
+}
+
+a{
+    color: violet;
+}

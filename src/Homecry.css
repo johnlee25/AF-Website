@@ -1,0 +1,185 @@
+.home-banner {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    background-color: #FFDE72;
+    background-image: linear-gradient(#FFDE72, #FFB479);
+    width: 100%;
+    height: 720px;
+}
+
+.logo {
+    position: relative;
+    font-size: 24px;
+    margin-left: 4%;
+    top: 51px;
+}
+
+.title {
+    text-align: center;
+    padding: 0px;
+    margin-top: 200px;
+}
+
+.titles {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.titlel {
+    font-size: 112px;
+    line-height: 108px;
+    color: white;
+}
+
+.home-body {
+    background-color: #FFF8E9;
+    width: 100%;
+    height: 720px;
+}
+
+.img-text {
+    width: 52%;
+    height: 406px;
+    background-color: white;
+    position: absolute;
+    left: 15%;
+    margin-top: 232px;
+    border-radius: 5%;
+}
+
+.img-title {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67px;
+    background: -webkit-linear-gradient(#FFDE72, #FFB479);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 70px;
+    margin-top: 77px;
+    line-height: 87px;
+}
+
+.img-titles {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.5px;
+    background: -webkit-linear-gradient(#FFDE72, #FFB479);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 70px;
+}
+
+.img-content {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 70px;
+    line-height: 20px;
+    max-width: 390px;
+    color: #727272;
+    margin-top: 10px;
+}
+
+.img-img {
+    width: 563px;
+    height: 461px;
+    border-radius: 5%;
+    margin-top: 75px;
+    position: absolute;
+    left: 48%;
+    z-index: 1;
+}
+
+.home-sponsors {
+    width: 100%;
+    height: 720px;
+}
+
+.sponsor-title {
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 88px;
+    background: -webkit-linear-gradient(83deg, #FFDE72, #FFB479);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sponsor-center {
+    text-align: center;
+}
+
+.sponsor-logooo {
+    display: inline-block;
+    margin-top: 100px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    color: #727272 ;
+}
+
+.sponsor-name{
+    
+}
+
+.img-sponsor {
+    margin: 0px 50px;
+    text-align: center;
+}
+
+.sponsor-button {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.sponsor-click {
+    padding: 0px;
+    border-radius: 100px;
+    border: none;
+    width: 198px;
+    height: 54px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background: -webkit-linear-gradient(180deg, #FFDE72, #FFB479);
+
+}
+
+.home-footer {
+    background-color: #FFDE72;
+    background-image: linear-gradient(#FFDE72, #FFB479);
+    width: 100%;
+    height: 272px;
+}
+
+.footer-email{
+    position: relative;
+    top:120px;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-logos{
+
+}
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px;
+}

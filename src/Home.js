@@ -1,87 +1,81 @@
 import React, { Component } from 'react';
 import './Home.css';
-import { HashRouter as Router, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Row } from 'react-bootstrap';
-import temp from './images/temp.png';
-import sponsorlogo from './images/sponsorlogo.png';
-import { FiInstagram  } from 'react-icons/fi';
-import { GrFacebookOption,GrSpotify  } from 'react-icons/gr';
-import { SiTiktok  } from 'react-icons/si';
+import cashbag1 from './images/cash-bag 1.png';
+import { GrFacebookOption, GrSpotify } from 'react-icons/gr';
+import { SiTiktok, SiInstagram } from 'react-icons/si';
+import { HashLink as Link } from 'react-router-hash-link';
+
+
 
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div class="home">
-                <div class="home-banner">
-                    <div class="logo">
-                        Asian Focus
-                    </div>
-                    <div class="title">
-                        <div class="titles">
-                            MCMASTER
-                    </div>
-                        <div class="titlel">
-                            Asian <br />Focus
-                    </div>
-                    </div>
-                </div>
-                <div class="home-body">
-                    <img class="img-img" src={temp} />
-                    <div class="img-text">
-                        <div class="img-title">
-                            About Us
+            <div class="new-home">
+                <div class="new-home-banner">
+                    <div class="new-home-blurb">
+                        <div class="new-home-blurb-title">
+                            ASIAN FOCUS
                         </div>
-                        <div class="img-titles">
-                            ASIAN FEDERATION OF CHARITABLE ASIAN STUDENTS
+                        <div class="new-home-blurb-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                         </div>
-                        <div class="img-content">
-                            <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. Quisque faucibus nunc sit amet dui pretium porttitor. Duis nec dignissim purus, at sodales neque. Aenean dolor nisl, imperdiet commodo tincidunt ac, sodales in nisi. Duis commodo turpis vitae augue ultrices, eget luctus justo facilisis. Integer vitae lacus vitae libero lacinia laoreet. Maecenas at massa ut arcu accumsan viverra. Aliquam tincidunt augue lacus, at ullamcorper odio condimentum nec. Quisque malesuada porta imperdiet. Aliquam erat volutpat. Nunc condimentum justo sed pretium porta. Fusce.
-                        </div>
+                    </div>
+                    <div class="new-home-contact-btn">
+                        <Link to='/#contact-us'>
+                        <button class="new-home-contact-btn-click" >
+                            CONTACT US
+                        </button></Link>
                     </div>
                 </div>
-                <div class="home-sponsors">
-                    <div class="sponsor-title">
-                        Our Sponsors
+
+                <hr class="hr-line" />
+
+                <div class="new-home-sponsors">
+                    <div class="new-home-sponsors-title">
+                        Upcoming Events
                     </div>
-                    <div class="sponsor-center">
-                        <div class="sponsor-logooo">
-                            <img class="img-sponsor" src={sponsorlogo} /> <br />
-                        FUCK AJIO
+                    <div class="new-home-sponsors-content">
+                        <div class="new-home-sponsors-content-items">
+                            <img class="new-sponsor-img1" src={cashbag1} alt="cashbag" />
                         </div>
-                        <div class="sponsor-logooo">
-                            <img class="img-sponsor" src={sponsorlogo} /> <br />
-                        FUCK AJIO
-                        </div>
-                        <div class="sponsor-logooo">
-                            <img class="img-sponsor" src={sponsorlogo} /> <br />
-                        FUCK AJIO
-                        </div>
-                        <div class="sponsor-logooo">
-                            <img class="img-sponsor" src={sponsorlogo} /> <br />
-                            FUCK AJIO
-                        </div>
-                        <div class="sponsor-logooo">
-                            <img class="img-sponsor" src={sponsorlogo} /> <br />
-                            FUCK AJIO
-                        </div>
-                    </div>
-                    <div class="sponsor-button">
-                        <button class="sponsor-click">
-                            BECOME A SPONSOR
-                        </button>
                     </div>
                 </div>
-                <div class="home-footer">
-                    <div class="footer-email">
-                        focus@mcmaster.ca
-                        <div class="footer-logos">
-                        <FiInstagram class="footer-icon"/> <GrFacebookOption class="footer-icon"/> <GrSpotify class="footer-icon"/> <SiTiktok class="footer-icon"/>
+
+                <hr class="hr-line" />
+
+                <div id="contact-us">
+                    <div class="new-home-contact-title">
+                        Contact Us
+                    </div>
+                    <div class="new-home-contact-content">
+                        <form>
+                            <label>
+                                <input type="text" name="name" placeholder="Name" style={{"width": "728px"}}/>
+                            </label>
+                            <br/>
+                            <label>
+                                <input type="text" name="email" placeholder="E-mail" style={{"width": "728px"}}/>
+                            </label>
+                            <br/>
+                            <label>
+                                <textarea  placeholder="Message" style={{"width": "728px" , "height": "100px"}}/>
+                            </label>
+                            <div class="new-home-contact-content-submit">
+                                <input type="submit" value="Submit" class="new-home-contact-content-submit-btn"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="new-home-footer">
+                    <div class="footer-container">
+                        <div class="new-home-footer-email">
+                            focus@mcmaster.ca
+                    </div>
+                        <div class="new-home-footer-icons">
+                            <SiInstagram class="new-home-footer-icons-social" /> <GrFacebookOption class="new-home-footer-icons-social" /> <GrSpotify class="new-home-footer-icons-social" /> <SiTiktok class="new-home-footer-icons-social" />
                         </div>
                     </div>
                 </div>
