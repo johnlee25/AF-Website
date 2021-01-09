@@ -1,0 +1,16 @@
+.upcomingevents{
+    background-color: #151515;
+    color: white;
+}
+
+.upcomingevents-upcoming{
+
+}
+
+.upcomingevents-upcoming-title {
+    padding: 116px 0px 0px 165px;
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 59px;
+}

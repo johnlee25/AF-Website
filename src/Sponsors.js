@@ -21,7 +21,7 @@ class Sponsors extends Component {
                         </div>
                         <div class="sponsor-content-links">
                             {this.props.sponsorsList.map(
-                                ({ sponsorName, sponsorIcon, id }) =>
+                                ({ sponsorName, sponsorIcon, key }) =>
                                     <div class="sponsor-content-links-img">
                                         <img src={sponsorIcon} alt={sponsorName} class="sponsor-img" />
                                         <div class="sponsor-content-links-name">
@@ -33,16 +33,7 @@ class Sponsors extends Component {
                     </div>
                 </div>
 
-                <div class="new-home-footer">
-                    <div class="footer-container">
-                        <div class="new-home-footer-email">
-                            focus@mcmaster.ca
-                        </div>
-                        <div class="new-home-footer-icons">
-                            <SiInstagram class="new-home-footer-icons-social" /> <GrFacebookOption class="new-home-footer-icons-social" /> <GrSpotify class="new-home-footer-icons-social" /> <SiTiktok class="new-home-footer-icons-social" />
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         );
     }

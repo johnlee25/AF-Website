@@ -81,6 +81,11 @@ html {
     width: 100%;
 }
 
+.new-home-contact-btn-click:hover {
+    background-color:  #F1C232;
+    color:  #151515;
+}
+
 .hr-line {
     width: 93%;
     background-Color: #9b9696;
@@ -92,9 +97,7 @@ html {
 }
 
 .new-home-events-title {
-    margin: 116px 0px 0px 165px;
-    width: 410px;
-    height: 59px;
+    padding: 116px 0px 0px 165px;
     font-family: Raleway;
     font-weight: 300;
     font-size: 50px;
@@ -238,41 +241,17 @@ textarea:focus {
 
 .new-home-contact-content-submit-btn {
     font-family: 'Raleway';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     border: 3px solid #F1C232;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: #151515;
     color: white;
-    height: 55px;
+    height: 50px;
     width: 100%;
 }
 
-.new-home-footer {
-    height: 160px;
-    background-color: #F1C232;
-}
-
-.new-home-footer-email {
-    color: white;
-    font-family: Raleway;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-}
-
-.new-home-footer-icons {
-    color: white;
-    text-align: center;
-    margin: 10px 0px 0px 0px;
-}
-
-.new-home-footer-icons-social {
-    width: 20px;
-    height: 20px;
-    margin: 0px 8px;
-}
-
-.footer-container {
-    padding-top: 56px;
+.new-home-contact-content-submit-btn:hover {
+    background-color:  #F1C232;
+    color:  #151515;
 }

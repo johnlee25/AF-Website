@@ -34,20 +34,22 @@ class Home extends Component {
             }, function (error) {
                 console.log('FAILED...', error);
             });
-            this.resetForm()
+        this.resetForm()
     }
     resetForm() {
         this.setState({
-          name: '',
-          email: '',
-          message: '',
+            name: '',
+            email: '',
+            message: '',
         })
         alert("Message Sent");
-      }
+    }
 
     handleChange = (param, e) => {
         this.setState({ [param]: e.target.value })
-      }
+    }
+
+
 
     render() {
         return (
@@ -77,7 +79,7 @@ class Home extends Component {
                     </div>
                     <div class="new-home-events-content">
                         {this.props.upcomingEvents.map(
-                            ({ eventName, eventDate, eventIcon, eventContent, id }) =>
+                            ({ eventName, eventDate, eventIcon, eventContent, key }) =>
                                 <div class="new-home-events-content-items" >
                                     <div class="new-events-img">
                                         <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
@@ -124,16 +126,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div class="new-home-footer">
-                    <div class="footer-container">
-                        <div class="new-home-footer-email">
-                            focus@mcmaster.ca
-                    </div>
-                        <div class="new-home-footer-icons">
-                            <SiInstagram class="new-home-footer-icons-social" /> <GrFacebookOption class="new-home-footer-icons-social" /> <GrSpotify class="new-home-footer-icons-social" /> <SiTiktok class="new-home-footer-icons-social" />
-                        </div>
-                    </div>
-                </div>
+
             </div >
         );
     }

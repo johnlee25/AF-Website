@@ -52,6 +52,33 @@
     text-decoration: none;
 }
 
-a{
-    color: violet;
+
+
+.new-home-footer {
+    height: 160px;
+    background-color: #F1C232;
+}
+
+.new-home-footer-email {
+    color: white;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.new-home-footer-icons {
+    color: white;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.new-home-footer-icons-social {
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px;
+}
+
+.footer-container {
+    padding-top: 56px;
 }
