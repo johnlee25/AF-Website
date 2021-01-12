@@ -1,16 +1,79 @@
-.upcomingevents{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.upcomingevents {
     background-color: #151515;
     color: white;
 }
 
-.upcomingevents-upcoming{
-
-}
+.upcomingevents-upcoming {}
 
 .upcomingevents-upcoming-title {
-    padding: 116px 0px 0px 165px;
+    padding: 116px 0px 0px 155px;
     font-family: Raleway;
     font-weight: 300;
     font-size: 50px;
     line-height: 59px;
+}
+
+.pastevents-title {
+    padding: 116px 0px 0px 155px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.pastevents-ahh {
+    text-align: center;
+    width: 1624px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px 72px;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.pastevents-content {
+    padding-bottom: 100px;
+}
+
+.pastevents-contents-items {
+    margin: 75px 0px 0px 0px;
+}
+
+.pastevents-contents-items-pic {}
+
+.pastevent-img {
+    width: 267px;
+    height: 267px;
+}
+
+.pastevents-contents-items-desc {
+    text-align: left;
+    color: white;
+}
+
+.pastevents-contents-items-desc-name {
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.pastevents-contents-items-desc-date {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
 }

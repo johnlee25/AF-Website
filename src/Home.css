@@ -1,43 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-    /* make scrollbar transparent */
-}
 
 .new-home {
     background-color: #151515;
-}
-
-.new-home-banner {
-    width: 1920px;
-    height: 624.5px;
-}
-
-.new-home-banner-logo {
-    position: absolute;
-    left: 50px;
-    top: 50px;
     color: white;
 }
 
-.AF-logo {
-    height: 100px;
-    width: 120px;
+.new-home-banner {
+    padding: 125px 0px 130px 204px
 }
 
+
 .new-home-blurb {
-    position: absolute;
     width: 1711px;
     height: 206px;
-    left: 204px;
-    top: 220px;
     color: white;
 }
 
@@ -56,14 +33,11 @@ html {
     font-size: 16px;
     line-height: 22px;
     width: 927px;
-    height: 173px;
-    padding-top: 40px;
+    padding: 40px 0px 50px 0px;
 }
 
 .new-home-contact-btn {
-    position: absolute;
-    left: 204px;
-    top: 503px;
+    margin: 0px 0px 0px 0px;
     width: 250px;
     height: 60px;
 }
@@ -149,7 +123,7 @@ html {
 
 .new-home-events-content-items-blurb {
     display: inline-block;
-    width: 860px;
+    width: 840px;
     font-family: Open Sans;
     font-weight: 200;
     font-size: 14px;
@@ -166,22 +140,31 @@ html {
 #contact-us {
     height: 538.5px;
     color: white;
+    margin: 116px 0px 0px 0px;
+    text-align: center;
 }
 
 .new-home-contact-title {
     font-family: Raleway;
     font-weight: 400;
     font-size: 40px;
-    margin: 116px 0px 0px 599px;
 }
 
 .new-home-contact-content {
-    margin: 0px 0px 0px 599px;
-    width: 728px;
+    margin: 0 auto;
 }
 
+.textbox-style{
+    width: 38%;
+}
+
+.textarea-style{
+    width: 38%;
+    height: 100px;
+    margin-bottom: 25px;
+}
+  
 input[type=text] {
-    width: 100%;
     padding: 10px 0px 20px 0px;
     margin: 0px 0;
     display: inline-block;
@@ -198,7 +181,6 @@ input[type=text]:focus {
 }
 
 textarea {
-    width: 100%;
     padding: 10px 0px 20px 0px;
     margin: 0px 0;
     display: inline-block;
@@ -236,7 +218,7 @@ textarea:focus {
 
 .new-home-contact-content-submit {
     width: 150px;
-    margin-top: 20px;
+    margin: 0 auto;
 }
 
 .new-home-contact-content-submit-btn {
@@ -255,3 +237,12 @@ textarea:focus {
     background-color:  #F1C232;
     color:  #151515;
 }
+
+@media only screen and (max-width: 1100px) {
+    .textbox-style{
+        width: 90%;
+    }
+    .textarea-style{
+        width: 90%;
+    }
+  }

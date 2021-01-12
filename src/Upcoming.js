@@ -18,25 +18,29 @@ class Upcoming extends Component {
                         Upcoming Events
                     </div>
                     <div class="new-home-events-content">
-                        {this.props.upcomingEvents.map(
-                            ({ eventName, eventDate, eventIcon, eventContent, key }) =>
-                                <div class="new-home-events-content-items" >
-                                    <div class="new-events-img">
-                                        <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
-                                    </div>
-                                    <div class="new-home-events-content-items-info">
-                                        <div class="new-home-events-content-items-info-date">
-                                            {eventDate}
+                        <Router>
+                            {this.props.upcomingEvents.map(
+                                ({ eventName, eventDate, eventIcon, eventContent, eventUrl, key }) =>
+                                    <div class="new-home-events-content-items" >
+                                        <Link to={"/events/" + eventUrl} >
+                                            <div class="new-events-img">
+                                                <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
+                                            </div>
+                                            <div class="new-home-events-content-items-info" style={{ color: "white" }}>
+                                                <div class="new-home-events-content-items-info-date">
+                                                    {eventDate}
+                                                </div>
+                                                <div class="new-home-events-content-items-info-name">
+                                                    {eventName}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <div class="new-home-events-content-items-blurb" >
+                                            {eventContent}
                                         </div>
-                                        <div class="new-home-events-content-items-info-name">
-                                            {eventName}
-                                        </div>
                                     </div>
-                                    <div class="new-home-events-content-items-blurb">
-                                        {eventContent}
-                                    </div>
-                                </div>
-                        )}
+                            )}
+                        </Router>
                     </div>
                 </div>
                 <hr class="hr-line" />
@@ -44,8 +48,31 @@ class Upcoming extends Component {
                     <div class="pastevents-title">
                         Past Events
                     </div>
-                    <div class="pastevents-content">
-                        
+                    <div class="pastevents-ahh">
+                        <div class="pastevents-content grid-container">
+                            <Router>
+                                {this.props.pastEvents.map(
+                                    ({ eventName, eventDate, eventIcon, key, eventUrl }) =>
+                                        <Link to={"/events/" + eventUrl} >
+
+                                            <div class="pastevents-contents-items grid-item">
+                                                <div class="pastevents-contents-items-pic">
+                                                    <img src={eventIcon} class="pastevent-img" />
+                                                    <div class="pastevents-contents-items-desc">
+                                                        <div class="pastevents-contents-items-desc-name">
+                                                            {eventName}
+                                                        </div>
+                                                        <div class="pastevents-contents-items-desc-date">
+                                                            {eventDate}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                )}
+
+                            </Router>
+                        </div>
                     </div>
                 </div>
 

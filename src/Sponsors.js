@@ -14,26 +14,22 @@ class Sponsors extends Component {
     render() {
         return (
             <div class="sponsors">
-                <div class="sponsors-body">
-                    <div class="sponsor-content">
-                        <div class="sponsor-content-title">
-                            Our Sponsors
-                        </div>
-                        <div class="sponsor-content-links">
-                            {this.props.sponsorsList.map(
-                                ({ sponsorName, sponsorIcon, key }) =>
-                                    <div class="sponsor-content-links-img">
-                                        <img src={sponsorIcon} alt={sponsorName} class="sponsor-img" />
-                                        <div class="sponsor-content-links-name">
-                                            {sponsorName}
-                                        </div>
+                <div class="sponsor-content">
+                    <div class="sponsor-content-title">
+                        Our Sponsors
+                    </div>
+                    <div class="sponsor-content-links">
+                        {this.props.sponsorsList.map(
+                            ({ sponsorName, sponsorIcon, key }) =>
+                                <div class="sponsor-content-links-img">
+                                    <img src={sponsorIcon} alt={sponsorName} class="sponsor-img" />
+                                    <div class="sponsor-content-links-name">
+                                        {sponsorName}
                                     </div>
-                            )}
-                        </div>
+                                </div>
+                        )}
                     </div>
                 </div>
-
-                
             </div>
         );
     }

@@ -3,6 +3,7 @@ import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GrFacebookOption, GrSpotify } from 'react-icons/gr';
 import { SiTiktok, SiInstagram } from 'react-icons/si';
+import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import * as emailjs from 'emailjs-com'
 
@@ -55,19 +56,18 @@ class Home extends Component {
         return (
             <div class="new-home">
                 <div class="new-home-banner">
-                    <div class="new-home-blurb">
-                        <div class="new-home-blurb-title">
-                            ASIAN FOCUS
-                        </div>
-                        <div class="new-home-blurb-content">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </div>
+                    <div class="new-home-blurb-title">
+                        ASIAN FOCUS
+                    </div>
+                    <div class="new-home-blurb-content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </div>
                     <div class="new-home-contact-btn">
                         <Link to='/#contact-us'>
                             <button class="new-home-contact-btn-click" >
                                 CONTACT US
-                        </button></Link>
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -78,25 +78,29 @@ class Home extends Component {
                         Upcoming Events
                     </div>
                     <div class="new-home-events-content">
-                        {this.props.upcomingEvents.map(
-                            ({ eventName, eventDate, eventIcon, eventContent, key }) =>
-                                <div class="new-home-events-content-items" >
-                                    <div class="new-events-img">
-                                        <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
-                                    </div>
-                                    <div class="new-home-events-content-items-info">
-                                        <div class="new-home-events-content-items-info-date">
-                                            {eventDate}
+                        <Router>
+                            {this.props.upcomingEvents.map(
+                                ({ eventName, eventDate, eventIcon, eventContent, eventUrl, key }) =>
+                                    <div class="new-home-events-content-items" >
+                                        <Link to={"/events/" + eventUrl} >
+                                            <div class="new-events-img">
+                                                <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
+                                            </div>
+                                            <div class="new-home-events-content-items-info" style={{ color: "white" }}>
+                                                <div class="new-home-events-content-items-info-date">
+                                                    {eventDate}
+                                                </div>
+                                                <div class="new-home-events-content-items-info-name">
+                                                    {eventName}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                        <div class="new-home-events-content-items-blurb" >
+                                            {eventContent}
                                         </div>
-                                        <div class="new-home-events-content-items-info-name">
-                                            {eventName}
-                                        </div>
                                     </div>
-                                    <div class="new-home-events-content-items-blurb">
-                                        {eventContent}
-                                    </div>
-                                </div>
-                        )}
+                            )}
+                        </Router>
                     </div>
                 </div>
 
@@ -108,17 +112,11 @@ class Home extends Component {
                     </div>
                     <div class="new-home-contact-content">
                         <form onSubmit={this.handleSubmit.bind(this)}>
-                            <label>
-                                <input type="text" name="name" placeholder="Name" style={{ "width": "728px" }} onChange={this.handleChange.bind(this, 'name')} value={this.state.name} required />
-                            </label>
+                            <input type="text" name="name" placeholder="Name" class="textbox-style" onChange={this.handleChange.bind(this, 'name')} value={this.state.name} required />
                             <br />
-                            <label>
-                                <input type="text" name="email" placeholder="E-mail" style={{ "width": "728px" }} onChange={this.handleChange.bind(this, 'email')} value={this.state.email} required />
-                            </label>
+                            <input type="text" name="email" placeholder="E-mail" class="textbox-style" onChange={this.handleChange.bind(this, 'email')} value={this.state.email} required />
                             <br />
-                            <label>
-                                <textarea placeholder="Message" style={{ "width": "728px", "height": "100px" }} onChange={this.handleChange.bind(this, 'message')} value={this.state.message} required />
-                            </label>
+                            <textarea placeholder="Message" class="textarea-style" onChange={this.handleChange.bind(this, 'message')} value={this.state.message} required />
                             <div class="new-home-contact-content-submit">
                                 <input type="submit" value="Submit" class="new-home-contact-content-submit-btn" />
                             </div>

@@ -20,9 +20,8 @@ class Shop extends Component {
                     <div class="shop-contents-items">
                         <Router>
                             {this.props.storeItems.map(
-                                ({ itemName, itemPicture, itemGender, itemPrice, itemIndex, id }) =>
-                                    <Link to={"/shop/" +  itemIndex } >
-
+                                ({ itemName, itemPicture, itemGender, itemPrice, itemUrlName, itemIndex, id }) =>
+                                    <Link to={"/shop/" +  itemUrlName } >
                                         <div class="shop-contents-items-ind">
                                             <div class="shop-contents-items-ind-pic">
                                                 <img src={itemPicture} class="shop-img" />

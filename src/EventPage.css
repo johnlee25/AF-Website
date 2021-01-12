@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.eventpage {
+    background-color: #151515;
+    color: white;
+}
+
+.eventpage-heading{
+    padding: 112px 0px 0px 155px
+}
+
+.eventpage-heading-title{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.eventpage-heading-date{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 20px 0px;
+}
+
+.eventpage-heading-content{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.eventpage-pics{
+
+}
