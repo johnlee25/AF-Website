@@ -73,6 +73,7 @@ class Home extends Component {
 
                 <hr class="hr-line" />
 
+
                 <div class="new-home-events">
                     <div class="new-home-events-title">
                         Upcoming Events
@@ -103,6 +104,9 @@ class Home extends Component {
                         </Router>
                     </div>
                 </div>
+
+
+
 
                 <hr class="hr-line" />
 

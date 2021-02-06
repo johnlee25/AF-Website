@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-.about-body {
+.new-about{
     background-color: #151515;
-    height: 720px;
     color: white;
+}
+
+.about-body {
+    text-align: center;
 }
 
 .about-content {
     width: 778px;
-    margin: 125px 0px 0px 204px;
+    margin: 125px 0px 300px 0px;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
 }
 
 .about-title {
@@ -49,10 +53,27 @@
     background-color:  #F1C232 !important;
 }
 
-@media screen and (min-height: 1080px) {
-    .about-body {
-        background-color: #151515;
-        height: 95vh;
-        color: white;
+@media screen and (max-width: 1610px) {
+    .about-pictures {
+        margin: 0px 0px 200px 0px;
+    }
+    .about-content {
+        margin: 125px 0px 100px 0px;
+    }
+    
+}
+
+@media screen and (max-width: 943px) {
+    .sliderimg {
+        width: 100%;
+
+    }
+    .about-pictures {
+        display: inline-block;
+        width: 100%;
+    }
+    .about-content {
+        width: 100%;
+
     }
 }

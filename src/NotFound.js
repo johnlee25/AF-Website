@@ -23,7 +23,7 @@ class NotFound extends Component {
                         404 ERROR
                     </div>
                     <div class="error-content-desc">
-                        Oops! The page you're looking fore doesn't exist <br /> or is temporarily unavailable.
+                        Oops! The page you're looking for doesn't exist <br /> or is temporarily unavailable.
                     </div>
                     <div class="error-content-button">
                         <Router>

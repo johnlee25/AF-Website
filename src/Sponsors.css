@@ -8,6 +8,7 @@
 
 .sponsor-content {
     padding: 112px 155px 30px 155px;
+    text-align: center;
 }
 
 .sponsor-content-title {
@@ -15,6 +16,7 @@
     font-weight: 300;
     font-size: 50px;
     line-height: 59px;
+    text-align: left;
 }
 
 .sponsor-content-links {
@@ -22,10 +24,8 @@
 }
 
 .sponsor-content-links-img {
-    width: 20%;
-    text-align: center;
     display: inline-block;
-    margin-bottom: 150px;
+    margin: 0px 50px 150px 0px;
 }
 
 .sponsor-img {
@@ -43,12 +43,4 @@
 
 .sponsor-link{
     color: white;
-}
-
-@media screen and (min-height: 1080px) {
-    .sponsor-body {
-        background-color: #151515;
-        height: 95vh;
-        color: white;
-    }
 }
