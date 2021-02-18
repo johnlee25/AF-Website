@@ -96,7 +96,8 @@ class App extends Component {
         { itemName: "Asian Focus Bottle Opener", itemUrlName: "Asian+Focus+Bottle+Opener", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 7 },
         { itemName: "Tears", itemUrlName: "Tears", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 8 },
         { itemName: "John Lee Picture Card", itemUrlName: "John+Lee+Picture+Card", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 9 },
-        { itemName: "Asian Focus Cup", itemUrlName: "Asian+Focus+Cup", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 10 }
+        { itemName: "John Lee Picture Card", itemUrlName: "John+Lee+Picture+Card", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 10 },
+        { itemName: "Asian Focus Cup", itemUrlName: "Asian+Focus+Cup", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 11 }
       ],
 
       aboutPics: [

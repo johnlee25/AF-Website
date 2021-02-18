@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
 .shop {
     background-color: #151515;
     color: white;
@@ -15,23 +14,17 @@
     font-weight: 300;
     font-size: 72px;
     line-height: 85px;
-    text-align: center;
+    padding: 50px 0px 0px 155px;
+
 }
 
 .shop-contents-items {
-    margin: 115.5px 0px 95.5px 0px;
-}
-
-.shop-contents-items-ind {
-    display: inline-block;
-    width: 33%;
-    padding: 100px 100px 0px 100px;
-    color: white;
+    padding: 50px 0px 100px 70px;
 }
 
 .shop-contents-items-ind-pic {
-    width: 446px;
-    height: 446px;
+    display: inline-block;
+    margin: 40px 80px;
 }
 
 .shop-img {
@@ -41,6 +34,7 @@
 
 .shop-contents-items-desc {
     text-align: left;
+    color: white;
 }
 
 .shop-contents-items-ind-name {
@@ -64,5 +58,4 @@
     font-size: 18px;
     line-height: 25px;
     margin-top: 11.5px;
-    
 }

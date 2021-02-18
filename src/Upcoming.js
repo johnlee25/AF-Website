@@ -48,31 +48,30 @@ class Upcoming extends Component {
                     <div class="pastevents-title">
                         Past Events
                     </div>
-                    <div class="pastevents-ahh">
-                        <div class="pastevents-content grid-container">
-                            <Router>
-                                {this.props.pastEvents.map(
-                                    ({ eventName, eventDate, eventIcon, key, eventUrl }) =>
-                                        <Link to={"/events/" + eventUrl} >
+                    <div class="pastevents-content">
+                        <Router>
+                            {this.props.pastEvents.map(
+                                ({ eventName, eventDate, eventIcon, key, eventUrl }) =>
+                                    <Link to={"/events/" + eventUrl} >
+                                        <div class="pastevents-contents-items-pic">
+                                            <img src={eventIcon} class="pastevent-img" />
+                                            <div class="pastevents-contents-items-desc">
 
-                                            <div class="pastevents-contents-items grid-item">
-                                                <div class="pastevents-contents-items-pic">
-                                                    <img src={eventIcon} class="pastevent-img" />
-                                                    <div class="pastevents-contents-items-desc">
-                                                        <div class="pastevents-contents-items-desc-name">
-                                                            {eventName}
-                                                        </div>
-                                                        <div class="pastevents-contents-items-desc-date">
-                                                            {eventDate}
-                                                        </div>
-                                                    </div>
+                                                <div class="pastevents-contents-items-desc-name">
+                                                    {eventName}
                                                 </div>
-                                            </div>
-                                        </Link>
-                                )}
 
-                            </Router>
-                        </div>
+                                                <div class="pastevents-contents-items-desc-date">
+                                                    {eventDate}
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </Link>
+                            )}
+
+                        </Router>
                     </div>
                 </div>
 
