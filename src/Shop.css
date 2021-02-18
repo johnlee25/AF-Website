@@ -19,7 +19,7 @@
 }
 
 .shop-contents-items {
-    padding: 50px 0px 100px 70px;
+    padding: 50px 0px 100px 50px;
 }
 
 .shop-contents-items-ind-pic {
@@ -58,4 +58,61 @@
     font-size: 18px;
     line-height: 25px;
     margin-top: 11.5px;
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 70px;
+    }
+}
+@media only screen and (min-width: 2880px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 200px;
+    }
+}
+@media only screen and (max-width: 1865px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 30px;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 300px;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 220px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 114px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 70px;
+    }
+}
+@media only screen and (max-width: 1285px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 20px;
+    }
+}
+@media only screen and (max-width: 1227px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 0px;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .shop-contents-items {
+        padding: 50px 0px 100px 0px;
+        text-align: center;
+    }
 }
