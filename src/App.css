@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
 .nav-bar-logo {
     width: 100%;
     background-color: #151515;
@@ -18,7 +17,7 @@
     float: right;
 }
 
-.nav-bar-link-content > a {
+.nav-bar-link-content>a {
     color: white;
     font-family: 'Raleway';
     font-weight: 300;
@@ -31,18 +30,31 @@
     font-weight: 300;
 }
 
+
 .nav-bar-social {
     color: white;
     width: 30px;
     height: 30px;
     margin: 0px 10px;
 }
-
-.nav-bar-icons{
-    margin-left: 20px;
+.nav-bar-social-small {
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
 }
 
-.active  {
+.nav-bar-icons {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-bar-icons-small {
+    cursor: pointer;
+}
+
+
+.active {
     font-family: 'Raleway';
     font-weight: 300;
     padding: 0px 20px;
@@ -54,8 +66,6 @@
     color: #F1C232;
     text-decoration: none;
 }
-
-
 
 .new-home-footer {
     height: 160px;
@@ -85,3 +95,71 @@
 .footer-container {
     padding-top: 56px;
 }
+
+.ham-sizing {
+    width: 50px;
+    height: 50px;
+}
+
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #F1C232;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    text-align: center;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+.bm-item {
+    display: block;
+    margin:20px 0px;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-decoration: none!important;
+}
+
+
+@media only screen and (max-width: 955px) {
+    .active {
+        padding: 0px 0px;
+    }
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+  }

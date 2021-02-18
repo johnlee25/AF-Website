@@ -12,6 +12,9 @@ import EventPage from './EventPage.js';
 import { HashRouter as Router, Route, Link, NavLink, Switch } from 'react-router-dom';
 import { GrFacebookOption, GrSpotify } from 'react-icons/gr';
 import { SiTiktok, SiInstagram } from 'react-icons/si';
+import MediaQuery from 'react-responsive'
+import { slide as Menu } from 'react-burger-menu'
+
 
 
 import about1 from './images/about1.jpg';
@@ -33,6 +36,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      menuOpen: false,
 
       upcomingEvents: [
         //This is where you add upcoming events to || Don't forget the , at the end of every line except the last
@@ -56,7 +60,7 @@ class App extends Component {
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 10 },
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 11 },
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 12 },
-        { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 13},
+        { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 13 },
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 14 },
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 15 },
         { eventName: "Valentine's Day", eventUrl: "Valentine's-Day", eventDate: "March 55, 2025", eventIcon: whyIsDayTradingSoHard, eventContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", eventIndex: 16 },
@@ -84,15 +88,15 @@ class App extends Component {
       storeItems: [
         //This is where you add Store Items to || Don't forget the , at the end of every line except the last
         { itemName: "Asian Focus Hoodie", itemUrlName: "Asian-Focus-Hoodie", itemPicture: whyIsDayTradingSoHard, itemGender: "Male", itemPrice: "50", itemIndex: 1 },
-        { itemName: "Yes im out of ideas", itemUrlName: "Yes-im-out-of-ideas",itemPicture: whyIsDayTradingSoHard, itemGender: "Male", itemPrice: "50", itemIndex: 2 },
+        { itemName: "Yes im out of ideas", itemUrlName: "Yes-im-out-of-ideas", itemPicture: whyIsDayTradingSoHard, itemGender: "Male", itemPrice: "50", itemIndex: 2 },
         { itemName: "Me", itemUrlName: "Me", itemPicture: whyIsDayTradingSoHard, itemGender: "Male", itemPrice: "50", itemIndex: 3 },
         { itemName: "Stick", itemUrlName: "Stick", itemPicture: whyIsDayTradingSoHard, itemGender: "Male", itemPrice: "50", itemIndex: 4 },
-        { itemName: "Milk Tea", itemUrlName: "Milk+Tea",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 5 },
-        { itemName: "Bubble Tea", itemUrlName: "Bubble+Tea",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 6 },
-        { itemName: "Asian Focus Bottle Opener", itemUrlName: "Asian+Focus+Bottle+Opener",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 7 },
-        { itemName: "Tears", itemUrlName: "Tears",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 8 },
-        { itemName: "John Lee Picture Card", itemUrlName: "John+Lee+Picture+Card",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 9 },
-        { itemName: "Asian Focus Cup", itemUrlName: "Asian+Focus+Cup",itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 10 }
+        { itemName: "Milk Tea", itemUrlName: "Milk+Tea", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 5 },
+        { itemName: "Bubble Tea", itemUrlName: "Bubble+Tea", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 6 },
+        { itemName: "Asian Focus Bottle Opener", itemUrlName: "Asian+Focus+Bottle+Opener", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 7 },
+        { itemName: "Tears", itemUrlName: "Tears", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 8 },
+        { itemName: "John Lee Picture Card", itemUrlName: "John+Lee+Picture+Card", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 9 },
+        { itemName: "Asian Focus Cup", itemUrlName: "Asian+Focus+Cup", itemPicture: whyIsDayTradingSoHard, itemGender: "Female", itemPrice: "50", itemIndex: 10 }
       ],
 
       aboutPics: [
@@ -103,6 +107,8 @@ class App extends Component {
         { picName: "About Picture 4", picAddy: about4 }
       ]
     }
+    this.handleStateChange=this.handleStateChange.bind(this)
+    this.closeMenu=this.closeMenu.bind(this)
   }
 
   mailed() {
@@ -125,23 +131,48 @@ class App extends Component {
     window.open("https://www.tiktok.com/@mcmasterasianfocus?source=h5", "_blank")
   }
 
+  handleStateChange (state) {
+    this.setState({menuOpen: state.isOpen})  
+  }
+
+  closeMenu = () => {
+    this.setState({menuOpen: false})
+  }
+
+  
+
   render() {
     return (
       <Router>
-        <div class="nav-bar-logo">
-          <Link class="nav-bar-link-logo" to="/">LOGO</Link>
-          <div class="nav-bar-content">
-            <span class="nav-bar-link-content"><NavLink exact={true} to="/" >HOME</NavLink></span>
-            <span class="nav-bar-link-content"><NavLink to="/about">ABOUT</NavLink></span>
-            <span class="nav-bar-link-content"><NavLink to="/shop">SHOP</NavLink></span>
-            <span class="nav-bar-link-content"><NavLink to="/events">EVENTS</NavLink></span>
-            <span class="nav-bar-link-content"> <NavLink to="/sponsors">SPONSORS</NavLink></span>
-            <span class="nav-bar-icons">
-              <SiInstagram class="nav-bar-social" onClick={this.openIG.bind(this)} /> <GrFacebookOption class="nav-bar-social" onClick={this.openFB.bind(this)} /> <GrSpotify class="nav-bar-social" onClick={this.openSP.bind(this)} /> <SiTiktok class="nav-bar-social" onClick={this.openTT.bind(this)} />
-            </span>
+        <MediaQuery maxWidth={955}>
+          <Menu disableAutoFocus isOpen={this.state.menuOpen} onStateChange={this.handleStateChange}>
+            <Link>
+              <span class="nav-bar-link-content" ><NavLink exact={true} to="/" className="bm-item" onClick={() => this.closeMenu()}>HOME</NavLink></span>
+              <span class="nav-bar-link-content" ><NavLink to="/about" className="bm-item"onClick={() => this.closeMenu()}>ABOUT</NavLink></span>
+              <span class="nav-bar-link-content" ><NavLink to="/shop" className="bm-item" onClick={this.closeMenu}>SHOP</NavLink></span>
+              <span class="nav-bar-link-content" ><NavLink to="/events" className="bm-item" onClick={this.closeMenu}>EVENTS</NavLink></span>
+              <span class="nav-bar-link-content" > <NavLink to="/sponsors" className="bm-item" onClick={this.closeMenu}>SPONSORS</NavLink></span>
+              <span class="nav-bar-icons-small" onClick={this.closeMenu}>
+                <SiInstagram class="nav-bar-social-small"  onClick={this.openIG.bind(this)} /> <GrFacebookOption class="nav-bar-social-small" onClick={this.openFB.bind(this)} /> <GrSpotify class="nav-bar-social-small" onClick={this.openSP.bind(this)} /> <SiTiktok class="nav-bar-social-small" onClick={this.openTT.bind(this)} />
+              </span>
+            </Link >
+          </Menu >
+        </MediaQuery >
+        <MediaQuery minWidth={956}>
+          <div class="nav-bar-logo">
+            <Link class="nav-bar-link-logo" to="/">LOGO</Link>
+            <div class="nav-bar-content">
+              <span class="nav-bar-link-content"><NavLink exact={true} to="/" >HOME</NavLink></span>
+              <span class="nav-bar-link-content"><NavLink to="/about">ABOUT</NavLink></span>
+              <span class="nav-bar-link-content"><NavLink to="/shop">SHOP</NavLink></span>
+              <span class="nav-bar-link-content"><NavLink to="/events">EVENTS</NavLink></span>
+              <span class="nav-bar-link-content"> <NavLink to="/sponsors">SPONSORS</NavLink></span>
+              <span class="nav-bar-icons">
+                <SiInstagram class="nav-bar-social" onClick={this.openIG.bind(this)} /> <GrFacebookOption class="nav-bar-social" onClick={this.openFB.bind(this)} /> <GrSpotify class="nav-bar-social" onClick={this.openSP.bind(this)} /> <SiTiktok class="nav-bar-social" onClick={this.openTT.bind(this)} />
+              </span>
+            </div>
           </div>
-        </div>
-
+        </MediaQuery>
         <Switch>
           <Route exact path="/" exact render={(props) => <Home  {...props} upcomingEvents={this.state.upcomingEvents} />} />
           <Route path="/about" exact render={(props) => <About  {...props} aboutPics={this.state.aboutPics} />} />
@@ -150,7 +181,7 @@ class App extends Component {
             ({ itemIndex, itemUrlName, key }) =>
               <Route path={"/shop/" + itemUrlName} exact render={(props) => <ShopPage  {...props} storeItems={this.state.storeItems[itemIndex - 1]} />} />
           )}
-          <Route path="/events" exact render={(props) => <Upcoming  {...props} upcomingEvents={this.state.upcomingEvents} pastEvents={this.state.pastEvents}/>} />
+          <Route path="/events" exact render={(props) => <Upcoming  {...props} upcomingEvents={this.state.upcomingEvents} pastEvents={this.state.pastEvents} />} />
           {this.state.pastEvents.map(
             ({ eventIndex, eventUrl, key }) =>
               <Route path={"/events/" + eventUrl} exact render={(props) => <EventPage  {...props} pastEvents={this.state.pastEvents[eventIndex - 1]} />} />
@@ -169,7 +200,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-      </Router>
+      </Router >
     );
   }
 }
