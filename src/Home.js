@@ -60,7 +60,7 @@ class Home extends Component {
                         ASIAN FOCUS
                     </div>
                     <div class="new-home-blurb-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    The Asian Federation of Charitable University Students (FOCUS) is a non-profit student-run organization at McMaster University founded in 1997. We strive to encourage charitable contributions from our student community towards local causes through social and cultural events. Some of the events we have organized over the years include DIY dumpling night, DIY bubble tea night, clubbing nights and virtual gaming and escape room events, attracting hundreds of McMaster and non-McMaster students alike.
                     </div>
                     <div class="new-home-contact-btn">
                         <Link to='/#contact-us'>
