@@ -42,19 +42,19 @@ class EventPage extends Component {
         // else if(index=="9"){
         //     return SecondGeneralMeeting2019
         // }
-        if(index=="10"){
-            return Euphoria
-        }
-        else if(index=="11"){
+        // if(index=="10"){
+        //     return Euphoria
+        // }
+        if(index=="1"){
             return FirstGeneralMeeting2019
         }
-        else if(index=="12"){
+        else if(index=="2"){
             return FirstAsianNightRAID
         }
-        else if(index=="13"){
+        else if(index=="3"){
             return DumplingNight
         }
-        else if(index=="14"){
+        else if(index=="4"){
             return SecondGeneralMeeting2020
         }
 
