@@ -15,34 +15,34 @@ class EventPage extends Component {
 
     eventSelector(index){
         console.log(this.props.pastEvents);
-        if(index=="1"){
-            return FirstGeneralMeeting2017
-        }
-        else if(index=="2"){
-            return Elcipse
-        }
-        else if(index=="3"){
-            return GingerbreadHouseContest
-        }
-        else if(index=="4"){
-            return Noir
-        }
-        else if(index=="5"){
-            return SecondGeneralMeeting2018
-        }
-        else if(index=="6"){
-            return Blanche
-        }
-        else if(index=="7"){
-            return FirstGeneralMeeting2018
-        }
-        else if(index=="8"){
-            return Wicked
-        }
-        else if(index=="9"){
-            return SecondGeneralMeeting2019
-        }
-        else if(index=="10"){
+        // if(index=="1"){
+        //     return FirstGeneralMeeting2017
+        // }
+        // else if(index=="2"){
+        //     return Elcipse
+        // }
+        // else if(index=="3"){
+        //     return GingerbreadHouseContest
+        // }
+        // else if(index=="4"){
+        //     return Noir
+        // }
+        // else if(index=="5"){
+        //     return SecondGeneralMeeting2018
+        // }
+        // else if(index=="6"){
+        //     return Blanche
+        // }
+        // else if(index=="7"){
+        //     return FirstGeneralMeeting2018
+        // }
+        // else if(index=="8"){
+        //     return Wicked
+        // }
+        // else if(index=="9"){
+        //     return SecondGeneralMeeting2019
+        // }
+        if(index=="10"){
             return Euphoria
         }
         else if(index=="11"){
