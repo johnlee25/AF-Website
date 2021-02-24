@@ -81,9 +81,9 @@ class Home extends Component {
                     <div class="new-home-events-content">
                         <Router>
                             {this.props.upcomingEvents.map(
-                                ({ eventName, eventDate, eventIcon, eventContent, eventUrl, key }) =>
+                                ({ eventName, eventDate, eventIcon, eventContent, key }) =>
                                     <div class="new-home-events-content-items" >
-                                        <Link to={"/events/" + eventUrl} >
+                                        
                                             <div class="new-events-img">
                                                 <img src={eventIcon} class="new-events-img-cry" alt="eventIcon" />
                                             </div>
@@ -95,7 +95,7 @@ class Home extends Component {
                                                     {eventName}
                                                 </div>
                                             </div>
-                                        </Link>
+                                        
                                         <div class="new-home-events-content-items-blurb" >
                                             {eventContent}
                                         </div>

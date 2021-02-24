@@ -118,3 +118,16 @@
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .upcomingevents-upcoming-title {
+        padding: 116px 0px 0px 0px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .pastevents-title {
+        padding: 116px 0px 0px 0px;
+        text-align: center;
+    }
+    
+}

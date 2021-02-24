@@ -77,3 +77,22 @@
 
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .about-content {
+        width: 100%;
+        margin: 125px 0px 50px 0px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+    
+    .about-text {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 20px 10px 0px 10px;
+    }
+    
+}

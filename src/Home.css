@@ -276,3 +276,18 @@ textarea:focus {
         margin: 0 auto;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .new-home-events-title {
+        padding: 116px 20px 0px 20px;
+        text-align: center;
+    }
+    .new-home-blurb-content {
+        padding: 40px 20px 50px 20px;
+    }
+    .new-home-events-content {
+        margin: 100px 20px 120px 20px;
+        text-align: center;
+    }
+    
+}
