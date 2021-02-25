@@ -144,7 +144,7 @@ class App extends Component {
             <Link>
               <span class="nav-bar-link-content" ><NavLink exact={true} to="/" className="bm-item" onClick={() => this.closeMenu()}>HOME</NavLink></span>
               <span class="nav-bar-link-content" ><NavLink to="/about" className="bm-item"onClick={() => this.closeMenu()}>ABOUT</NavLink></span>
-              <span class="nav-bar-link-content" ><NavLink to="/shop" className="bm-item" onClick={this.closeMenu}>SHOP</NavLink></span>
+              {/* <span class="nav-bar-link-content" ><NavLink to="/shop" className="bm-item" onClick={this.closeMenu}>SHOP</NavLink></span> */}
               <span class="nav-bar-link-content" ><NavLink to="/events" className="bm-item" onClick={this.closeMenu}>EVENTS</NavLink></span>
               <span class="nav-bar-link-content" > <NavLink to="/sponsors" className="bm-item" onClick={this.closeMenu}>SPONSORS</NavLink></span>
               <span class="nav-bar-icons-small" onClick={this.closeMenu}>
@@ -159,7 +159,7 @@ class App extends Component {
             <div class="nav-bar-content">
               <span class="nav-bar-link-content"><NavLink exact={true} to="/" >HOME</NavLink></span>
               <span class="nav-bar-link-content"><NavLink to="/about">ABOUT</NavLink></span>
-              <span class="nav-bar-link-content"><NavLink to="/shop">SHOP</NavLink></span>
+              {/* <span class="nav-bar-link-content"><NavLink to="/shop">SHOP</NavLink></span> */}
               <span class="nav-bar-link-content"><NavLink to="/events">EVENTS</NavLink></span>
               <span class="nav-bar-link-content"> <NavLink to="/sponsors">SPONSORS</NavLink></span>
               <span class="nav-bar-icons">
@@ -171,11 +171,11 @@ class App extends Component {
         <Switch>
           <Route exact path="/" exact render={(props) => <Home  {...props} upcomingEvents={this.state.upcomingEvents} />} />
           <Route path="/about" exact render={(props) => <About  {...props} aboutPics={this.state.aboutPics} />} />
-          <Route path="/shop" exact render={(props) => <Shop  {...props} storeItems={this.state.storeItems} />} />
+          {/* <Route path="/shop" exact render={(props) => <Shop  {...props} storeItems={this.state.storeItems} />} />
           {this.state.storeItems.map(
             ({ itemIndex, itemUrlName, key }) =>
               <Route path={"/shop/" + itemUrlName} exact render={(props) => <ShopPage  {...props} storeItems={this.state.storeItems[itemIndex - 1]} />} />
-          )}
+          )} */}
           <Route path="/events" exact render={(props) => <Upcoming  {...props} upcomingEvents={this.state.upcomingEvents} pastEvents={this.state.pastEvents} />} />
           {this.state.pastEvents.map(
             ({ eventIndex, eventUrl, key }) =>
